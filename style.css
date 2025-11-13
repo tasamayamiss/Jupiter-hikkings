@@ -1921,7 +1921,7 @@ a:active {
   width: 80%;
   margin-left: 10%;
   position: relative;
-  height: 1250px;
+  height: 1320px;
 }
 
 .title_str{
@@ -1977,7 +1977,7 @@ a:active {
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .str1_el1{
@@ -2027,7 +2027,7 @@ a.str1_el2:hover{
   position: absolute;
   width: 100%;
   height: 1px;
-  margin-top: 70px;
+  margin-top: 75px;
   border-color: black;
   background-color: black;
 }
@@ -2036,7 +2036,7 @@ a.str1_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 90px;
+  margin-top: 105px;
 }
 
 .str2_el1{
@@ -2087,7 +2087,7 @@ a.str2_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 170px;
+  margin-top: 185px;
 }
 
 .str3_el1{
@@ -2137,7 +2137,7 @@ a.str3_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 250px;
+  margin-top: 270px;
 }
 
 .str4_el1{
@@ -2187,7 +2187,7 @@ a.str4_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 330px;
+  margin-top: 360px;
 }
 
 .str5_el1{
@@ -2237,7 +2237,7 @@ a.str5_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 410px;
+  margin-top: 440px;
 }
 
 .str6_el1{
@@ -2287,7 +2287,7 @@ a.str6_el2:hover{
   position: absolute;
   width: 100%;
   height: 1px;
-  margin-top: 82px;
+  margin-top: 90px;
   border-color: black;
   background-color: black;
 }
@@ -2296,7 +2296,7 @@ a.str6_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 490px;
+  margin-top: 540px;
 }
 
 .str7_el1{
@@ -2346,7 +2346,7 @@ a.str7_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 570px;
+  margin-top: 620px;
 }
 
 .str8_el1{
@@ -2396,7 +2396,7 @@ a.str8_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 650px;
+  margin-top: 700px;
 }
 
 .str9_el1{
@@ -2446,7 +2446,7 @@ a.str9_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 730px;
+  margin-top: 785px;
 }
 
 .str10_el1{
@@ -2496,7 +2496,7 @@ a.str10_el2:hover{
   position: absolute;
   width: 100%;
   height: 1px;
-  margin-top: 40px;
+  margin-top: 50px;
   border-color: black;
   background-color: black;
 }
@@ -2505,7 +2505,7 @@ a.str10_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 780px;
+  margin-top: 850px;
 }
 
 .str11_el1{
@@ -2555,7 +2555,7 @@ a.str11_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 860px;
+  margin-top: 930px;
 }
 
 .str12_el1{
@@ -2605,7 +2605,7 @@ a.str12_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 940px;
+  margin-top: 1020px;
 }
 
 .str13_el1{
@@ -2655,7 +2655,7 @@ a.str13_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 1020px;
+  margin-top: 1105px;
 }
 
 .str14_el1{
@@ -2705,7 +2705,7 @@ a.str14_el2:hover{
   position: relative;
   width: 100%;
   margin-left: 0%;
-  margin-top: 1100px;
+  margin-top: 1190px;
 }
 
 .str15_el1{
@@ -3218,7 +3218,6 @@ a.str15_el2:hover{
   height: 70px;
   display: inline-block;
   position: relative;
-  background-color: aqua;
 }
 
 .tg{
