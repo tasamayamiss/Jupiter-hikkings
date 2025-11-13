@@ -1,0 +1,900 @@
+#preloader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.preloader_img{
+  width: 80%;
+  animation: small-big-small 2s ease-in-out;
+}
+
+@keyframes small-big-small {
+  0% {
+    transform: scale(0.7, 0.7);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  /* font-size: 16px; */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 0px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.header{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  background-color: #F9AE21;
+  padding-top: 10px;
+}
+
+.back{
+    margin-left: 3%;
+    background-image: url(img/back.png);
+    width: 40px;
+    height: 25px;
+    margin-top: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.logo{
+    background-image: url(img/preloader.png);
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    margin-left: 92%;
+    margin-top: -17px;
+}
+
+.title{
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  position: absolute;
+  margin-left: 47%;
+}
+
+.cards{
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    height: 500px;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.card1{
+    width: 30%;
+    height: 480px;
+    margin-left: 17.5%;
+    border: 1px solid;
+    border-color: rgba(82, 82, 82, 0.712);
+    border-radius: 30px;
+    position: absolute;
+    box-shadow: 2px 2px 5px 0.5px rgba(163, 163, 163, 0.783);
+}
+
+
+.card2{
+    width: 30%;
+    height: 480px;
+    margin-left: 52.5%;
+    border: 1px solid;
+    border-color: rgba(82, 82, 82, 0.712);
+    border-radius: 30px;
+    position: absolute;
+    box-shadow: 2px 2px 5px 0.5px rgba(163, 163, 163, 0.783);
+}
+
+.card1_photo{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 220px;
+    border-radius: 20px;
+    background-image: url(img/Архыз_без_р.jpg);
+    background-size: cover;
+}
+
+.card1_name{
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card1_level{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.level1{
+    margin-top: -3px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+}
+
+.circle{
+width: 12px; 
+height: 12px;
+background: #7eff33;
+border-radius: 50%;
+position: absolute;
+margin-left: 65%;
+}
+
+.dates1{
+    margin-top: 13px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.prise1{
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute; 
+}
+
+a.btn1{
+    width: 16%;
+    text-align: center;
+    margin-left: 24.25%;
+    height: 32px;
+    background-color: #F9AE21;
+    margin-top: 425px;
+    border-radius: 12px;
+    color:#ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 7px;
+    z-index: 10;
+    position: absolute;
+}
+
+a.close {
+    width: 25px;
+    height: 25px;
+    margin-left: 90%;
+    margin-top: 20px;
+    position: absolute;
+    background-image: url("img/крест.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#zatemnenie1{
+  background: rgba(219, 218, 218, 0.95);
+  width: 100%;
+  height: 250vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  z-index: 100;
+}
+
+#okno1{
+        width: 34%;
+        margin-left: 33%;
+        margin-top: 60px;
+        height: 1385px;
+        border: 3px solid #ffffff;
+        border-radius: 25px;
+        color: #ffffff;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+
+    .okno_picture1{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        background-image: url(img/Архыз_без_р.jpg);
+        background-size: cover;
+        border-radius: 25px;
+    }
+
+
+    .okno1_text{
+        width: 100%;
+        background-color: #ffffff;
+        height: 420px;
+        margin-top: 240px;
+        border-radius: 30px 30px 0px 0px;
+        z-index: 100;
+        position: absolute;
+    }
+
+    .okno_title1{
+        font-size: 20px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        margin-top: 30px;
+        margin-left: 7%;
+    }
+
+    .okno1_text1{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 40px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno1_text2{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 65px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno1_text3{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 125px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno1_text4{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 215px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno1_text5{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 235px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno1_text6{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 285px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text7{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 335px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text8{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 385px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text9{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 465px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text10{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 515px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text11{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 590px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text12{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 14px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        margin-top: 645px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text13{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 690px;
+        z-index: 200;
+        position: absolute;
+    }
+
+
+        .okno1_text14{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 710px;
+        z-index: 200;
+        position: absolute;
+    }
+
+
+        .okno1_text15{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 865px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text16{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 885px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno1_text17{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        margin-top: 960px;
+        z-index: 200;
+        position: absolute;
+    }
+
+
+
+
+    a.okno_btn1{
+        width: 40%;
+        text-align: center;
+        margin-left: 30%;
+        height: 32px;
+        background-color: #F9AE21;
+        margin-top: 1000px;
+        border-radius: 12px;
+        color:#ffffff;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        padding-top: 7px;
+        z-index: 200;
+        position: absolute;
+        box-shadow: 0px 5px 10px 0px rgba(5, 5, 5, 0.2);
+    }
+
+    #zatemnenie1:target {display: block;}
+
+
+
+
+#zatemnenie2{
+  background: rgba(219, 218, 218, 0.95);
+  width: 100%;
+  height: 265vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  z-index: 100;
+}
+
+#okno2{
+        width: 34%;
+        margin-left: 33%;
+        margin-top: 60px;
+        height: 1475px;
+        border: 3px solid #ffffff;
+        border-radius: 25px;
+        color: #ffffff;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+
+    .okno_picture2{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        background-image: url(img/архыз_сем_лагерь.jpg);
+        background-size: cover;
+        border-radius: 25px;
+    }
+
+
+    .okno2_text{
+        width: 100%;
+        background-color: #ffffff;
+        height: 420px;
+        margin-top: 240px;
+        border-radius: 30px 30px 0px 0px;
+        z-index: 100;
+        position: absolute;
+    }
+
+    .okno_title2{
+        font-size: 20px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        margin-top: 30px;
+        margin-left: 7%;
+    }
+
+        .okno2_text1{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 40px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno2_text2{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 65px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno2_text3{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 120px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno2_text4{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 350px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno2_text5{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 370px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno2_text6{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 420px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text7{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 485px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text8{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 535px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text9{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 610px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text10{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 645px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text11{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 725px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text12{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 14px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        margin-top: 775px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text13{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 825px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text14{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 845px;
+        z-index: 200;
+        position: absolute;
+    }
+
+        .okno2_text15{
+        margin-left: 7%;
+        margin-right: 7%;
+        font-size: 12px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        margin-top: 960px;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .okno2_text16{
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 12px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-top: 980px;
+    z-index: 200;
+    position: absolute;
+    }
+
+    a.okno_btn2{
+        width: 40%;
+        text-align: center;
+        margin-left: 30%;
+        height: 32px;
+        background-color: #F9AE21;
+        margin-top: 1030px;
+        border-radius: 12px;
+        color:#ffffff;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        padding-top: 7px;
+        z-index: 200;
+        position: absolute;
+        box-shadow: 0px 5px 10px 0px rgba(5, 5, 5, 0.2);
+    }
+
+    #zatemnenie2:target {display: block;}
+
+
+
+
+
+
+.card2_photo{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 220px;
+    border-radius: 20px;
+    background-image: url(img/архыз_сем_лагерь.jpg);
+    background-size: cover;
+}
+
+.card2_name{
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card2_level{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.level2{
+    margin-top: -3px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+}
+
+.dates2{
+    margin-top: 13px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.prise2{
+    margin-top: 20px;
+    margin-left: 10%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute; 
+}
+
+a.btn2{
+    width: 16%;
+    text-align: center;
+    margin-left: 59.25%;
+    height: 32px;
+    background-color: #F9AE21;
+    margin-top: 425px;
+    border-radius: 12px;
+    color:#ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 7px;
+    z-index: 10;
+    position: absolute;
+}
+
+
+
+
+
+
+a{
+  color: rgb(0, 0, 0);
+}
+
+a:link {
+  outline: none;
+  text-decoration: none;
+}
+
+a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+a:active {
+  border-bottom: 1px solid;
+}
+
+
+
+
+
+footer{
+  width: 100%;
+  height: 850px;
+  margin-top: 330px;
+  background-image: url('img/end.png');
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
