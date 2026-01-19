@@ -78,7 +78,10 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
+  height: 100%;
   background-color: var(--white);
   display: flex;
   justify-content: center;
@@ -909,7 +912,7 @@ a {
         max-width: 850px;
     }
 
-        .burger-menu {
+    .burger-menu {
     width: 60px;
     height: 40px;
     margin-right: -330px;
@@ -917,7 +920,7 @@ a {
 }
     
     .hero {
-        min-height: 650px;
+        min-height: 750px;
         margin-top: -90px;
     }
     
@@ -956,10 +959,9 @@ a {
         margin-top: 15px;
     }
     
-    /* Герой - уменьшаем высоту */
     .hero {
-        min-height: 450px; /* Уменьшено с 600px */
-        margin-top: -80px;
+        min-height: 600px; /* Уменьшено с 600px */
+        margin-top: -75px;
     }
     
     .hero-content {
