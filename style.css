@@ -71,6 +71,7 @@ a {
   padding: 15px 10px;
   margin-bottom: 30px;
   width: 100%;
+  font-size: 28px;
 }
 
 /* Preloader */
@@ -912,6 +913,10 @@ a {
         max-width: 850px;
     }
 
+          .section-title {
+        font-size: 26px !important;
+    }
+
     .burger-menu {
     width: 60px;
     height: 40px;
@@ -950,6 +955,10 @@ a {
     .container {
         max-width: 70%; /* Изменено с 600px на 90% */
         padding: 0 20px;
+    }
+
+          .section-title {
+        font-size: 24px !important;
     }
     
     .burger-menu {
@@ -1354,6 +1363,10 @@ a {
         max-width: 85%;
         padding: 0 20px;
     }
+
+      .section-title {
+        font-size: 22px !important;
+    }
     
     .burger-menu {
         width: 40px;
@@ -1542,6 +1555,10 @@ a {
     .container {
         max-width: 90%;
         padding: 0 15px;
+    }
+
+      .section-title {
+        font-size: 20px !important;
     }
     
     /* Шапка */
@@ -1812,10 +1829,11 @@ a {
     }
 
   .section-title {
-        font-size: 14px; /* Еще меньше */
+        font-size: 18px !important;
         padding: 8px;
         margin-bottom: 15px;
-        font-weight: 500;
+        font-weight: 550;
+
     }
     
     /* Шапка */
